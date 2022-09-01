@@ -6,14 +6,17 @@ This is TinyTapeout submission on Verilog. It implements 7 oscillators, and divi
 As we only have access to Verilog, to ensure oscillators are not optimized away they shift register data as second input. 
 
 # In pinout: 
+```
 0: clock in (for debugging)
 1: reset
 2: shift register clk
 3: shift register data
 4-6: clock source id
 7: unused
+```
 
 # Out pinout: 
+```
 0: clock divided by 2^9
 1: clock divided by 2^13
 2: clock divided by 2^17
@@ -22,10 +25,12 @@ As we only have access to Verilog, to ensure oscillators are not optimized away 
 5: clock divided by 2^29
 6: clock divided by 2^31
 7: Bit 11 of shift register (to ensure it's not optimized away)
+```
 
-#Clock variants. 
+# Clock variants:
 XOR requires ones in shift register. 
 
+```
 b000: clk_in
 b001: 3-stage XOR oscillator
 b002: 5-stage XOR oscillator
@@ -34,6 +39,6 @@ b004: 2-stage XOR oscillator (requires only one '1' in shift register to have si
 b005: 5-stage NAND oscillator
 b006: 5-stage NOR oscillator
 b007: 5-stage + oscillator
-
+```
 
 
