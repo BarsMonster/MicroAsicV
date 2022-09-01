@@ -3,7 +3,7 @@ Go to https://tinytapeout.com for instructions!
 # MicroAsicV
 
 This is TinyTapeout submission on Verilog. It implements 7 oscillators, and divides clock to allow external measurements via slow IO. 
-As we only have access to Verilog, to ensure oscillators are not optimized away they shift register data as second input. 
+As we only have access to Verilog, to ensure oscillators are not optimized away they use shift register data as second input. 
 
 # In pinout: 
 ```
