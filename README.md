@@ -17,13 +17,13 @@ As we only have access to Verilog, to ensure oscillators are not optimized away 
 
 # Out pinout: 
 ```
-0: clock divided by 2^9
-1: clock divided by 2^13
-2: clock divided by 2^17
-3: clock divided by 2^21
-4: clock divided by 2^25
-5: clock divided by 2^29
-6: clock divided by 2^31
+0: clock divided by 2^10
+1: clock divided by 2^14
+2: clock divided by 2^18
+3: clock divided by 2^22
+4: clock divided by 2^26
+5: clock divided by 2^30
+6: clock divided by 2^32
 7: Bit 11 of shift register (to ensure it's not optimized away)
 ```
 
