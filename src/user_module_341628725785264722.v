@@ -88,7 +88,7 @@ assign io_out[3] = data[19];
 assign io_out[4] = data[23];
 assign io_out[5] = data[27];
 assign io_out[6] = data[31];
-assign io_out[7] = shifter[127];
+assign io_out[7] = shifter[63];
 //div4 tmp1(clk, rst_n, io_out[6]);
 
 always @ (posedge selected_clock or posedge rst_n) begin
