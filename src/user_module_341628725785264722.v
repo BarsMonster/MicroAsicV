@@ -37,11 +37,11 @@ assign clk_source[2] = io_in[6];
 
 
 /*Shift register chain, 128-bit*/
-reg [127:0] shifter;
+reg [63:0] shifter;
 
 always @(posedge shift_clk)
 begin
-    shifter[127:1] <= shifter[126:0];
+    shifter[63:1] <= shifter[62:0];
     shifter[0]   <= shift_dta;
 end
 
