@@ -37,11 +37,11 @@ assign clk_source[2] = io_in[6];
 
 
 /*Shift register chain, 16-bit*/
-reg [15:0] shifter;
+reg [11:0] shifter;
 
 always @(posedge shift_clk)
 begin
-    shifter[15:1] <= shifter[14:0];
+    shifter[11:1] <= shifter[10:0];
     shifter[0]   <= shift_dta;
 end
 
@@ -120,15 +120,15 @@ always @ (*) begin
     endcase
 end
   
-reg [31 : 0] data;
+reg [29 : 0] data;
 assign io_out[0] = data[7];
 assign io_out[1] = data[11];
 assign io_out[2] = data[15];
 assign io_out[3] = data[19];
 assign io_out[4] = data[23];
 assign io_out[5] = data[27];
-assign io_out[6] = data[31];
-assign io_out[7] = shifter[15];
+assign io_out[6] = data[29];
+assign io_out[7] = shifter[11];
 //div4 tmp1(clk, rst_n, io_out[6]);
 
 always @ (posedge selected_clock or posedge rst_n) begin
