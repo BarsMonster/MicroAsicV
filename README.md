@@ -28,7 +28,7 @@ As we only have access to Verilog, to ensure oscillators are not optimized away 
 7: Bit 11 of shift register (to ensure it's not optimized away)
 ```
 
-# Oscillation selection:
+# Oscillator selection:
 XOR, NAND requires ones in shift register. 
 NOR requires 0's. 
 Full adder requies odd or even bits set to 1 (but not both). 
