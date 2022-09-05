@@ -35,12 +35,12 @@ Full adder requies odd or even bits set to 1 (but not both).
 
 ```
 b000: clk_in
-b001: 3-stage XOR oscillator
-b002: 5-stage XOR oscillator
+b001: 3-stage XOR oscillator (can be set to 1 or 3 inversions through shift register)
+b002: 5-stage XOR oscillator (can be set to 1, 3 or 5 inversions through shift register)
 b003: 1-stage XOR oscillator (unlikely to work)
 b004: 2-stage XOR oscillator (requires only one '1' in shift register to have single inversion)
-b005: 5-stage NAND oscillator
-b006: 5-stage NOR oscillator
+b005: 5-stage NAND oscillator (can be set to 1, 3 or 5 inversions through shift register)
+b006: 5-stage NOR oscillator (can be set to 1, 3 or 5 inversions through shift register)
 b007: 5-stage Full adder oscillator
 ```
 
